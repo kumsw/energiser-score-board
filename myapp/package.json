@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node -r dotenv/config ./bin/www",
     "createTable": "node -r dotenv/config db/scripts/createTable.js",
-    "scores": "node -r dotenv/config model/scores.js"
+    "scores": "node -r dotenv/config model/scores.js",
+    "dropTable": "node -r dotenv/config db/scripts/dropTable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
