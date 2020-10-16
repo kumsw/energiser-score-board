@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="../public/stylesheets/style.css" />
   </head>
   <body>
-    <h1>School of Code</h1>
-    <h2>Energiser Score Board</h2>
-    <img
-      src="https://www.schoolofcode.co.uk/static/logo-51c754388b198e5bbb0d08a971ebbfa2.png"
-      alt="School of Code Logo Image"
-    />
-    <form action="/action_page.php">
-      <label>Name:</label>
-      <input type="text" id="fname" /><br /><br />
+    <section id="header">
+      <!-- <h1>School of Code</h1> -->
+      <h2>Energiser Score Board</h2>
 
-      <label>Bootcamper ID:</label>
-      <input type="text" id="bootcamperID" /><br /><br />
+      <img
+        src="https://www.schoolofcode.co.uk/static/logo-51c754388b198e5bbb0d08a971ebbfa2.png"
+        alt="School of Code Logo Image"
+      />
+    </section>
+    <section id="formSection">
+      <form action="/action_page.php">
+        <label>Name:</label>
+        <input type="text" id="fname" /><br /><br />
 
-      <label>Date:</label>
-      <input type="date" id="date" /><br /><br />
+        <label>Bootcamper ID:</label>
+        <input type="text" id="bootcamperID" /><br /><br />
 
-      <label>Gartic Score:</label>
-      <input type="number" id="garticScore" /><br /><br />
+        <label>Date:</label>
+        <input type="date" id="date" /><br /><br />
 
-      <label>Scattegories Score:</label>
-      <input type="number" id="scattegories" /><br /><br />
+        <label>Gartic Score:</label>
+        <input type="number" id="garticScore" /><br /><br />
 
-      <input type="submit" value="Submit" id="submitButton" />
-    </form>
+        <label>Scattegories Score:</label>
+        <input type="number" id="scattegories" /><br /><br />
+      </form>
+    </section>
+    <input type="submit" value="Submit" id="submitButton" />
     <button id="getLeaderBoard">Show Leader Board</button>
     <button id="orderList">Rank the Leader Board</button>
     <section id="leaderBoard"></section>

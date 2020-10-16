@@ -2,11 +2,11 @@ const leaderBoard = document.querySelector("#leaderBoard");
 const leaderBoardButton = document.querySelector("#getLeaderBoard");
 const submitButton = document.querySelector("#submitButton");
 const orderButton = document.querySelector("#orderList");
-const leaderBoardRanked=document.querySelector("#leaderBoardRanked")
+const leaderBoardRanked = document.querySelector("#leaderBoardRanked");
 
 submitButton.addEventListener("click", handleSubmit);
 leaderBoardButton.addEventListener("click", handleClick);
-orderButton.addEventListener("click", orderList );
+orderButton.addEventListener("click", orderList);
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -67,7 +67,7 @@ function createScoresBlock({
   scattegories,
 }) {
   const article = document.createElement("article");
-  const h2BootcamperName = document.createElement("h2");
+  let h2BootcamperName = document.createElement("h2");
   h2BootcamperName.innerText = `Bootcamper: ${bootcamper_name}`;
   const h3BootcamperId = document.createElement("h3");
   h3BootcamperId.innerText = `Id: ${bootcamper_id}`;
@@ -96,26 +96,25 @@ async function orderList() {
   const orderedArray = array.sort(compare);
   console.log(orderedArray);
   return orderedArray;
-
 }
 orderList();
 
 function compare(a, b) {
-    // Use toUpperCase() to ignore character casing
-    const garticA = a.gartic_score;
-    const garticB = b.gartic_score;
-  
-    let comparison = 0;
-    if (garticA > garticB) {
-      comparison = -1;
-    } else if (garticA < garticB) {
-      comparison = 1;
-    }
-    return comparison;
+  // Use toUpperCase() to ignore character casing
+  const garticA = a.gartic_score;
+  const garticB = b.gartic_score;
+
+  let comparison = 0;
+  if (garticA > garticB) {
+    comparison = -1;
+  } else if (garticA < garticB) {
+    comparison = 1;
   }
-  
+  return comparison;
+}
+
 /*   function appendRankedScores(rankedScores) {
     /* const orderArr = orderList(); */
-  /*   const orderArr = createScoresBlock(rankedScores)
+/*   const orderArr = createScoresBlock(rankedScores)
     leaderBoardRanked.appendChild(orderArr); */
-    /* console.log(leaderBoard); */
+/* console.log(leaderBoard); */
