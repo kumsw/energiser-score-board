@@ -2,10 +2,11 @@ const leaderBoard = document.querySelector("#leaderBoard");
 const leaderBoardButton = document.querySelector("#getLeaderBoard");
 const submitButton = document.querySelector("#submitButton");
 const orderButton = document.querySelector("#orderList");
+const leaderBoardRanked=document.querySelector("#leaderBoardRanked")
 
 submitButton.addEventListener("click", handleSubmit);
 leaderBoardButton.addEventListener("click", handleClick);
-orderButton.addEventListener("click", orderList);
+orderButton.addEventListener("click", orderList );
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -54,7 +55,7 @@ async function getAllScores() {
 function appendScoreData(scores) {
   const scoreBlock = createScoresBlock(scores);
   leaderBoard.appendChild(scoreBlock);
-  console.log(leaderBoard);
+  /* console.log(leaderBoard); */
 }
 
 // this function creates the block and appends the data to the article section
@@ -87,6 +88,34 @@ function createScoresBlock({
 getAllScores();
 
 // sort the array using the .sort() array method. Sort by a the highst combined score of gartic and scatt.
-function orderList() {
-  // add the
+async function orderList() {
+  const response = await fetch(`http://localhost:3000/scores`);
+  const { payload } = await response.json();
+  const array = payload;
+  /* console.log(array); */
+  const orderedArray = array.sort(compare);
+  console.log(orderedArray);
+  return orderedArray;
+
 }
+orderList();
+
+function compare(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const garticA = a.gartic_score;
+    const garticB = b.gartic_score;
+  
+    let comparison = 0;
+    if (garticA > garticB) {
+      comparison = -1;
+    } else if (garticA < garticB) {
+      comparison = 1;
+    }
+    return comparison;
+  }
+  
+/*   function appendRankedScores(rankedScores) {
+    /* const orderArr = orderList(); */
+  /*   const orderArr = createScoresBlock(rankedScores)
+    leaderBoardRanked.appendChild(orderArr); */
+    /* console.log(leaderBoard); */
