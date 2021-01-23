@@ -10,7 +10,7 @@ This hackathon was my first experience building a full stack application using E
 You need to start the server to connect to the database. Use the following command:
 `npm run start`
 
-![SOC Energiser score tracker landing page](myapp/public/scoreboard.png =200x150)
+![SOC Energiser score tracker landing page](myapp/public/scoreboard.png)
 
 ## Hackathon Requirements
 
