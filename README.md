@@ -3,7 +3,7 @@
 
 ##### October 2020
 
-This hackathon was my first experience building a full stack application using Express and a PostgreSQL database for persistent storage. This score tracker will help coahes and bootcampers keep track of bootcamper scores. The leaderboard can be sorted in order of Gartic Score.
+This hackathon was my first experience building a full stack application using Express and a PostgreSQL database for persistent storage. This score tracker will help coaches and bootcampers keep track of bootcamper scores in our daily energisers. The leaderboard can be sorted in order of [Gartic](https://gartic.io/) Score.
 
 ## To Start:
 
