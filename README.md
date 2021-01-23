@@ -1,6 +1,5 @@
 # Energiser Score Tracker
-
-\*\*School of Code Bootcamp - Week 4 Hackathon
+**School of Code Bootcamp - Week 4 Hackathon**
 
 ##### October 2020
 
@@ -11,7 +10,7 @@ This hackathon was my first experience building a full stack application using E
 You need to start the server to connect to the database. Use the following command:
 `npm run start`
 
-![SOC Energiser score tracker landing page](/public/Screenshot 2021-01-23 at 18.04.07.png)
+![SOC Energiser score tracker landing page](Screenshot 2021-01-23 at 18.04.07.png)
 
 ## Hackathon Requirements
 
