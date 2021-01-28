@@ -41,7 +41,7 @@ Clone the repo as instructed below and install npm modules. You need to start th
 
 ## Stretch goals:
 
-This is not currently an active project but if I had more time I would think about adding this functionality:
+This is not currently an active project but if I had more time I would loot to add this functionality:
 
 - Ability to sort the data on multiple scores.
 - Write more models and routes (`DELETE`, `UPDATE`).
