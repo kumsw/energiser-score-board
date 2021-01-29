@@ -6,6 +6,13 @@
 
 This hackathon was my first experience building a full stack application using Express and a PostgreSQL database for persistent storage. This score tracker will help coaches and bootcampers keep track of bootcamper scores in our daily energisers. A leaderboard can be retrived from the database and then can be sorted in order of [Gartic](https://gartic.io/) Score.
 
+#### Hackathon Requirements
+
+- Must use a Database for persistent storage.
+- Must use the model pattern to allow easy interaction with the data.
+- Must use an REST API server to manage requests and serve back data.
+- Must have a front end which allows users to at least view the data.
+
 ![SOC Energiser score tracker landing page](myapp/public/scoreboard.png)
 
 ## To Start
@@ -20,15 +27,8 @@ Clone the repo as instructed below and install npm modules. You need to start th
     `npm i`
 3.  Open a terminal and start the server using:
     ` npm run start`
-4.  Open a local version of your `index.html` in the e browser, for example:  
+4.  Open a local version of your `index.html` in the browser, for example:  
     ` /Users/{YOUR INFO}/energiser-score-board/myapp/views/index.html`
-
-## Hackathon Requirements
-
-- Must use a Database for persistent storage.
-- Must use the model pattern to allow easy interaction with the data.
-- Must use an REST API server to manage requests and serve back data.
-- Must have a front end which allows users to at least view the data.
 
 ## Main learnings:
 
