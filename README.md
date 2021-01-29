@@ -25,10 +25,9 @@ Clone the repo as instructed below and install npm modules. You need to start th
     `https://github.com/kumsw/energiser-score-board.git`
 2.  Download the required npm modules.<br/>
     `npm i`
-3.  Open a terminal and start the server using:<br/>
-    ` npm run start`
-4.  Open a local version of your `index.html` in the browser, for example:<br/>  
-    ` /Users/{YOUR INFO}/energiser-score-board/myapp/views/index.html`
+3.  Open a terminal and start the server using:<br/>` npm run start`
+4.  Open a local version of your `index.html` in the browser, for example:<br/>
+    `/Users/{YOUR INFO}/energiser-score-board/myapp/views/index.html`
 
 ## Main learnings:
 
