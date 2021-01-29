@@ -21,13 +21,13 @@ Clone the repo as instructed below and install npm modules. You need to start th
 
 ## Installation
 
-1.  Clone the repo.
+1.  Clone the repo<br/>
     `https://github.com/kumsw/energiser-score-board.git`
-2.  Download the required npm modules.
+2.  Download the required npm modules.<br/>
     `npm i`
-3.  Open a terminal and start the server using:
+3.  Open a terminal and start the server using:<br/>
     ` npm run start`
-4.  Open a local version of your `index.html` in the browser, for example:  
+4.  Open a local version of your `index.html` in the browser, for example:<br/>  
     ` /Users/{YOUR INFO}/energiser-score-board/myapp/views/index.html`
 
 ## Main learnings:
@@ -35,13 +35,13 @@ Clone the repo as instructed below and install npm modules. You need to start th
 - Using PostgreSQL and creating a database on Heroku.
 - Took time to break down the problem and plan our approach before coding.
 - Connected up our backend and frontend.
-- creating a building an Express app.
-- Sorting our data based on one parameter.
-- Better understanding of REST API's in a full stack application.
+- Created an Express app.
+- Added logic to sorting our data based on the Gartic score.
+- I got a better understanding of REST API's in a full stack application.
 
 ## Stretch goals:
 
-This is not currently an active project but if I had more time I would loot to add this functionality:
+This is not currently an active project but if I had more time I would look to add this functionality:
 
 - Ability to sort the data on multiple scores.
 - Write more models and routes (`DELETE`, `UPDATE`).
